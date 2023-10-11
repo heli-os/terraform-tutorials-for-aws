@@ -13,11 +13,11 @@ provider "aws" {
   region  = "ap-northeast-2"
 }
 
-resource "aws_instance" "sample_terrform_app_server" {
-  ami           = "ami-0e581dc33f688a5df"
+resource "aws_instance" "app_server" {
+  ami           = "ami-09318275b68e42715"
   instance_type = "t2.micro"
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = "LearnTerraformForAwsSample"
   }
 }
